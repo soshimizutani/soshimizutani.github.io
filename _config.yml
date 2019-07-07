@@ -111,6 +111,9 @@ author:
   bio              : "OSIT PhD student in Condensed Matter Physics and Machine Learning."
   location         : "Okinawa, Japan"
   email            : soshi.mizutani@oist.jp
+  github           : https://github.com/soshimizutani
+  youtube          : https://www.youtube.com/channel/UCP8EZtLYjOdNl5YyMHzNmxg
+
   links:
     - label: "Email:soshi.mizutani@oist.jp"
       icon: "fas fa-fw fa-envelope-square"
