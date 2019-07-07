@@ -1,10 +1,10 @@
 ---
 layout: tags
-permalink: /machine-learning/
-title: "Machine Learning Posts by Tags"
+permalink: /physics/
+title: "Physics Posts by Tags"
 author_profile: true
 header:
-  image: "/images/ml.jpeg"
+  image: "/images/physics.jpg"
 ---
 
 
