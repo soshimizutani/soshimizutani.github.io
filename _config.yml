@@ -112,21 +112,21 @@ author:
   location         : "Okinawa, Japan"
   email            : soshi.mizutani@oist.jp
   links:
-    - label: "Email"
+    - label: "Email:soshi.mizutani@oist.jp"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:soshi.mizutani@oist.jp
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://www.facebook.com/soshi.mizutani"
+      # url: https://www.facebook.com/soshi.mizutani
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/soshimizutani"
+      # url: https://github.com/soshimizutani
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://www.instagram.com/sushithepianist/"
+      # url: https://www.instagram.com/sushithepianist/
     - label: "Youtube"
       icon: "fas fa-fw fa-youtube"
-      # url: "https://www.youtube.com/channel/UCP8EZtLYjOdNl5YyMHzNmxg"
+      # url: https://www.youtube.com/channel/UCP8EZtLYjOdNl5YyMHzNmxg
 
 # Site Footer
 footer:
