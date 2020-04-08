@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ccabea6d7afc48aabaa2fd4e90524df8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ccabea6d7afc48aabaa2fd4e90524df8" ></div>
+        
+</body>
+<script>    
+    
+            var map_ccabea6d7afc48aabaa2fd4e90524df8 = L.map(
+                "map_ccabea6d7afc48aabaa2fd4e90524df8",
+                {
+                    center: [26.43, 127.8],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10.12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa85c5f52df14d6895ea9074a65a1046 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e.Data by \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e,under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ccabea6d7afc48aabaa2fd4e90524df8);
+        
+    
+            var marker_cluster_7d567da28d7f4ad08dfea7f367936e6e = L.markerClusterGroup(
+                {}
+            );
+            map_ccabea6d7afc48aabaa2fd4e90524df8.addLayer(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+            var marker_e60ac3db88bd42a19addeacda3b3db5e = L.marker(
+                [26.192634, 127.729369],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_6c222841640a4bc896d4db2a4c6130c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad444efdfb0945c58cd4fec96b3bb0fc = $(`<div id="html_ad444efdfb0945c58cd4fec96b3bb0fc" style="width: 100.0%; height: 100.0%;">date:, age:60s, gender:F, status:discharged</div>`)[0];
+            popup_6c222841640a4bc896d4db2a4c6130c5.setContent(html_ad444efdfb0945c58cd4fec96b3bb0fc);
+        
+
+        marker_e60ac3db88bd42a19addeacda3b3db5e.bindPopup(popup_6c222841640a4bc896d4db2a4c6130c5)
+        ;
+
+        
+    
+    
+            var marker_e46153e744d640babfa00ad3fcad4421 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_0e08480261f74b758b5545088aa7470f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20281312efab4f43b391abb3fe2a042b = $(`<div id="html_20281312efab4f43b391abb3fe2a042b" style="width: 100.0%; height: 100.0%;">date:, age:60s, gender:M, status:discharged</div>`)[0];
+            popup_0e08480261f74b758b5545088aa7470f.setContent(html_20281312efab4f43b391abb3fe2a042b);
+        
+
+        marker_e46153e744d640babfa00ad3fcad4421.bindPopup(popup_0e08480261f74b758b5545088aa7470f)
+        ;
+
+        
+    
+    
+            var marker_4f75de718c49493bb4977e17970e06c6 = L.marker(
+                [26.1772381, 127.6863791],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_0a3c39549af6438e80e4d270cc32e30f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b08cbcbdb9744e08e142540627e8bc0 = $(`<div id="html_6b08cbcbdb9744e08e142540627e8bc0" style="width: 100.0%; height: 100.0%;">date:, age:80s, gender:M, status:discharged</div>`)[0];
+            popup_0a3c39549af6438e80e4d270cc32e30f.setContent(html_6b08cbcbdb9744e08e142540627e8bc0);
+        
+
+        marker_4f75de718c49493bb4977e17970e06c6.bindPopup(popup_0a3c39549af6438e80e4d270cc32e30f)
+        ;
+
+        
+    
+    
+            var marker_5f650cc6d016414e818c39b2403b560f = L.marker(
+                [26.3343738, 127.8056597],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_be0468dab827436c90b0cc88f06c6533 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fae00ab30af402b92fdb375c0936ee2 = $(`<div id="html_3fae00ab30af402b92fdb375c0936ee2" style="width: 100.0%; height: 100.0%;">date:, age:10s, gender:F, status:discharged</div>`)[0];
+            popup_be0468dab827436c90b0cc88f06c6533.setContent(html_3fae00ab30af402b92fdb375c0936ee2);
+        
+
+        marker_5f650cc6d016414e818c39b2403b560f.bindPopup(popup_be0468dab827436c90b0cc88f06c6533)
+        ;
+
+        
+    
+    
+            var marker_fb8ed423b9bd4a359076cc6a3c791021 = L.marker(
+                [26.192634, 127.729369],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_1550947eece24e0d88cafd9015a713c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef0e2c35a14d449d909d8c3bd74c30e8 = $(`<div id="html_ef0e2c35a14d449d909d8c3bd74c30e8" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:M, status:hospitalized</div>`)[0];
+            popup_1550947eece24e0d88cafd9015a713c2.setContent(html_ef0e2c35a14d449d909d8c3bd74c30e8);
+        
+
+        marker_fb8ed423b9bd4a359076cc6a3c791021.bindPopup(popup_1550947eece24e0d88cafd9015a713c2)
+        ;
+
+        
+    
+    
+            var marker_91af1632d5874b78ba17749988c9bb6f = L.marker(
+                [35.6828387, 139.7594549],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_458b0d83e53747828c6799d27f2e0cf0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17164ec012644817827cc6afd7b16a7c = $(`<div id="html_17164ec012644817827cc6afd7b16a7c" style="width: 100.0%; height: 100.0%;">date:, age:40s, gender:M, status:hospitalized</div>`)[0];
+            popup_458b0d83e53747828c6799d27f2e0cf0.setContent(html_17164ec012644817827cc6afd7b16a7c);
+        
+
+        marker_91af1632d5874b78ba17749988c9bb6f.bindPopup(popup_458b0d83e53747828c6799d27f2e0cf0)
+        ;
+
+        
+    
+    
+            var marker_bb343aa9f3014d188257e40993a4f543 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_ce3932dc8705476cbaf75ee4e9c759a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_100ef8143d6a425e8b811269dee45b2f = $(`<div id="html_100ef8143d6a425e8b811269dee45b2f" style="width: 100.0%; height: 100.0%;">date:, age:30s, gender:M, status:hospitalized</div>`)[0];
+            popup_ce3932dc8705476cbaf75ee4e9c759a0.setContent(html_100ef8143d6a425e8b811269dee45b2f);
+        
+
+        marker_bb343aa9f3014d188257e40993a4f543.bindPopup(popup_ce3932dc8705476cbaf75ee4e9c759a0)
+        ;
+
+        
+    
+    
+            var marker_7155abf4a24542a091ac353abd9a001f = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_7030d3923ea945c6bd24d19de1b7eda5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d364a9479f1d4bf6bbcd19b47c4c8a73 = $(`<div id="html_d364a9479f1d4bf6bbcd19b47c4c8a73" style="width: 100.0%; height: 100.0%;">date:, age:30s, gender:F, status:hospitalized</div>`)[0];
+            popup_7030d3923ea945c6bd24d19de1b7eda5.setContent(html_d364a9479f1d4bf6bbcd19b47c4c8a73);
+        
+
+        marker_7155abf4a24542a091ac353abd9a001f.bindPopup(popup_7030d3923ea945c6bd24d19de1b7eda5)
+        ;
+
+        
+    
+    
+            var marker_c9117f4fb1984b21a9716270406d77fc = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_bed5bf6edfe848bbbb077404c7b17bb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ba4764120924291a46898f1c5e98550 = $(`<div id="html_6ba4764120924291a46898f1c5e98550" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:F, status:hospitalized</div>`)[0];
+            popup_bed5bf6edfe848bbbb077404c7b17bb0.setContent(html_6ba4764120924291a46898f1c5e98550);
+        
+
+        marker_c9117f4fb1984b21a9716270406d77fc.bindPopup(popup_bed5bf6edfe848bbbb077404c7b17bb0)
+        ;
+
+        
+    
+    
+            var marker_6e55ae753fa84c16bebf180018fe069e = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_188a8470da0642dfa11a4641dd17dbb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bd271c8380846299dfd83e72254bfc5 = $(`<div id="html_7bd271c8380846299dfd83e72254bfc5" style="width: 100.0%; height: 100.0%;">date:, age:40s, gender:M, status:hospitalized</div>`)[0];
+            popup_188a8470da0642dfa11a4641dd17dbb7.setContent(html_7bd271c8380846299dfd83e72254bfc5);
+        
+
+        marker_6e55ae753fa84c16bebf180018fe069e.bindPopup(popup_188a8470da0642dfa11a4641dd17dbb7)
+        ;
+
+        
+    
+    
+            var marker_22de25ab6b4b4f8a931a844b837d46ba = L.marker(
+                [26.3343738, 127.8056597],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_a04ac6cc9d0041bd8057f5d3a5537d16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e86c34bc8dde4dada8f188a3f0511fd8 = $(`<div id="html_e86c34bc8dde4dada8f188a3f0511fd8" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:M, status:hospitalized</div>`)[0];
+            popup_a04ac6cc9d0041bd8057f5d3a5537d16.setContent(html_e86c34bc8dde4dada8f188a3f0511fd8);
+        
+
+        marker_22de25ab6b4b4f8a931a844b837d46ba.bindPopup(popup_a04ac6cc9d0041bd8057f5d3a5537d16)
+        ;
+
+        
+    
+    
+            var marker_1379c253648b4df1845da53a9eaae4d1 = L.marker(
+                [35.6828387, 139.7594549],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_959fa989c6e9444caa0d41334ffde4bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d887b472774845b9a863c0f6cd6b8f52 = $(`<div id="html_d887b472774845b9a863c0f6cd6b8f52" style="width: 100.0%; height: 100.0%;">date:, age:30s, gender:M, status:hospitalized</div>`)[0];
+            popup_959fa989c6e9444caa0d41334ffde4bf.setContent(html_d887b472774845b9a863c0f6cd6b8f52);
+        
+
+        marker_1379c253648b4df1845da53a9eaae4d1.bindPopup(popup_959fa989c6e9444caa0d41334ffde4bf)
+        ;
+
+        
+    
+    
+            var marker_d8a71b4b81aa44c7a7b4d3970c54a1e9 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_0e1ebc9a7692421e9ddb5bf0fb476512 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e760d4c7fdc43ab9637e7be1d56fa09 = $(`<div id="html_5e760d4c7fdc43ab9637e7be1d56fa09" style="width: 100.0%; height: 100.0%;">date:, age:70s, gender:M, status:hospitalized</div>`)[0];
+            popup_0e1ebc9a7692421e9ddb5bf0fb476512.setContent(html_5e760d4c7fdc43ab9637e7be1d56fa09);
+        
+
+        marker_d8a71b4b81aa44c7a7b4d3970c54a1e9.bindPopup(popup_0e1ebc9a7692421e9ddb5bf0fb476512)
+        ;
+
+        
+    
+    
+            var marker_7be3cdc8059d48678a44e44eca23d598 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_9a286036f34e4460945994e4de10e1bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e3a60687ffe4e48821762743583a7c0 = $(`<div id="html_0e3a60687ffe4e48821762743583a7c0" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:M, status:hospitalized</div>`)[0];
+            popup_9a286036f34e4460945994e4de10e1bd.setContent(html_0e3a60687ffe4e48821762743583a7c0);
+        
+
+        marker_7be3cdc8059d48678a44e44eca23d598.bindPopup(popup_9a286036f34e4460945994e4de10e1bd)
+        ;
+
+        
+    
+    
+            var marker_c63b269e6932413f8ec78191d78bdb80 = L.marker(
+                [26.192634, 127.729369],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_405aa39780cd4fc1847f161b32f06dfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f2f1bf3b25f41d4a956ec1a9edfde56 = $(`<div id="html_7f2f1bf3b25f41d4a956ec1a9edfde56" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:F, status:hospitalized</div>`)[0];
+            popup_405aa39780cd4fc1847f161b32f06dfb.setContent(html_7f2f1bf3b25f41d4a956ec1a9edfde56);
+        
+
+        marker_c63b269e6932413f8ec78191d78bdb80.bindPopup(popup_405aa39780cd4fc1847f161b32f06dfb)
+        ;
+
+        
+    
+    
+            var marker_957494157c184ce4a070587d530b228f = L.marker(
+                [26.2815839, 127.7785754],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_56182a274e8c4112819057df353767d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df79c47965df48238b69931845657a2e = $(`<div id="html_df79c47965df48238b69931845657a2e" style="width: 100.0%; height: 100.0%;">date:, age:40s, gender:F, status:hospitalized</div>`)[0];
+            popup_56182a274e8c4112819057df353767d9.setContent(html_df79c47965df48238b69931845657a2e);
+        
+
+        marker_957494157c184ce4a070587d530b228f.bindPopup(popup_56182a274e8c4112819057df353767d9)
+        ;
+
+        
+    
+    
+            var marker_d69db96edebc4c6585728c8c2435707e = L.marker(
+                [26.3343738, 127.8056597],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_00c2886cc726443f836d63de2a5b0906 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a4789f7b0504817a0dbc57bcd5231ab = $(`<div id="html_1a4789f7b0504817a0dbc57bcd5231ab" style="width: 100.0%; height: 100.0%;">date:, age:30s, gender:F, status:hospitalized</div>`)[0];
+            popup_00c2886cc726443f836d63de2a5b0906.setContent(html_1a4789f7b0504817a0dbc57bcd5231ab);
+        
+
+        marker_d69db96edebc4c6585728c8c2435707e.bindPopup(popup_00c2886cc726443f836d63de2a5b0906)
+        ;
+
+        
+    
+    
+            var marker_18c6ec4e3d544917a129cf2ea7829cea = L.marker(
+                [26.192634, 127.729369],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_1ed00711df824c12be9061398151e1e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_057f3d8b38b142ed91e9526f18df2495 = $(`<div id="html_057f3d8b38b142ed91e9526f18df2495" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:M, status:hospitalized</div>`)[0];
+            popup_1ed00711df824c12be9061398151e1e0.setContent(html_057f3d8b38b142ed91e9526f18df2495);
+        
+
+        marker_18c6ec4e3d544917a129cf2ea7829cea.bindPopup(popup_1ed00711df824c12be9061398151e1e0)
+        ;
+
+        
+    
+    
+            var marker_45c58415b9724fde83e56ab65c074122 = L.marker(
+                [26.192634, 127.729369],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_72529ba879cc4a16a99f02d88a11f551 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dbde6a57399482b93800c63fc8e196c = $(`<div id="html_8dbde6a57399482b93800c63fc8e196c" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:M, status:hospitalized</div>`)[0];
+            popup_72529ba879cc4a16a99f02d88a11f551.setContent(html_8dbde6a57399482b93800c63fc8e196c);
+        
+
+        marker_45c58415b9724fde83e56ab65c074122.bindPopup(popup_72529ba879cc4a16a99f02d88a11f551)
+        ;
+
+        
+    
+    
+            var marker_80fb5490b6a743c59af85b6431217104 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_df31fe7dbb6f4e7995d8a77b3580a368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_341684485d9e440fa4dc7f967bc90b7d = $(`<div id="html_341684485d9e440fa4dc7f967bc90b7d" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:M, status:hospitalized</div>`)[0];
+            popup_df31fe7dbb6f4e7995d8a77b3580a368.setContent(html_341684485d9e440fa4dc7f967bc90b7d);
+        
+
+        marker_80fb5490b6a743c59af85b6431217104.bindPopup(popup_df31fe7dbb6f4e7995d8a77b3580a368)
+        ;
+
+        
+    
+    
+            var marker_6ea40e52b42e429a87aa6ebcc0bbeb23 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_251c5ca47437496ea67f975b31d569f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0795a84c044d47608f3d5a4f3326efe0 = $(`<div id="html_0795a84c044d47608f3d5a4f3326efe0" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:M, status:hospitalized</div>`)[0];
+            popup_251c5ca47437496ea67f975b31d569f4.setContent(html_0795a84c044d47608f3d5a4f3326efe0);
+        
+
+        marker_6ea40e52b42e429a87aa6ebcc0bbeb23.bindPopup(popup_251c5ca47437496ea67f975b31d569f4)
+        ;
+
+        
+    
+    
+            var marker_a4df646bcfa244dbb1337d6d5ca593d9 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_375fda9a75674a848de89810dd8bd2e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a15cb7ecc6b4195809fbbcd4b6debe2 = $(`<div id="html_5a15cb7ecc6b4195809fbbcd4b6debe2" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:F, status:hospitalized</div>`)[0];
+            popup_375fda9a75674a848de89810dd8bd2e5.setContent(html_5a15cb7ecc6b4195809fbbcd4b6debe2);
+        
+
+        marker_a4df646bcfa244dbb1337d6d5ca593d9.bindPopup(popup_375fda9a75674a848de89810dd8bd2e5)
+        ;
+
+        
+    
+    
+            var marker_7f93d34fca644ac1a768d2dbf11ea0d1 = L.marker(
+                [26.249754, 127.716591],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_959271b423d14259af6a01f17fd2b82d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0602e2dfdbb47eb8e7da324d6a099e8 = $(`<div id="html_d0602e2dfdbb47eb8e7da324d6a099e8" style="width: 100.0%; height: 100.0%;">date:, age:70s, gender:F, status:hospitalized</div>`)[0];
+            popup_959271b423d14259af6a01f17fd2b82d.setContent(html_d0602e2dfdbb47eb8e7da324d6a099e8);
+        
+
+        marker_7f93d34fca644ac1a768d2dbf11ea0d1.bindPopup(popup_959271b423d14259af6a01f17fd2b82d)
+        ;
+
+        
+    
+    
+            var marker_adcfcf6bfad143a38fd2b5a0e0966546 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_284ff129a10c49cdb70d72d1571b97a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35796210662c401994f1a6fe728e3280 = $(`<div id="html_35796210662c401994f1a6fe728e3280" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:F, status:hospitalized</div>`)[0];
+            popup_284ff129a10c49cdb70d72d1571b97a7.setContent(html_35796210662c401994f1a6fe728e3280);
+        
+
+        marker_adcfcf6bfad143a38fd2b5a0e0966546.bindPopup(popup_284ff129a10c49cdb70d72d1571b97a7)
+        ;
+
+        
+    
+    
+            var marker_add8651843fc42eeb5142e28e2aaec77 = L.marker(
+                [35.6828387, 139.7594549],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_672517f61f20472d87855be0098c08fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ed6c1fe640040d794fb7a33436a803d = $(`<div id="html_2ed6c1fe640040d794fb7a33436a803d" style="width: 100.0%; height: 100.0%;">date:, age:30s, gender:M, status:hospitalized</div>`)[0];
+            popup_672517f61f20472d87855be0098c08fe.setContent(html_2ed6c1fe640040d794fb7a33436a803d);
+        
+
+        marker_add8651843fc42eeb5142e28e2aaec77.bindPopup(popup_672517f61f20472d87855be0098c08fe)
+        ;
+
+        
+    
+    
+            var marker_8a5293ad5268459cb807ed0768ac576b = L.marker(
+                [26.2815839, 127.7785754],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_8a55e9b8ac9c42f1a9d990e373d16098 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22bfec7531674d8c8f15680518046ef8 = $(`<div id="html_22bfec7531674d8c8f15680518046ef8" style="width: 100.0%; height: 100.0%;">date:, age:40s, gender:M, status:hospitalized</div>`)[0];
+            popup_8a55e9b8ac9c42f1a9d990e373d16098.setContent(html_22bfec7531674d8c8f15680518046ef8);
+        
+
+        marker_8a5293ad5268459cb807ed0768ac576b.bindPopup(popup_8a55e9b8ac9c42f1a9d990e373d16098)
+        ;
+
+        
+    
+    
+            var marker_678794cd6aa1449f929f0b5d9a012677 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_27b4c5119a2743ef84d712440c8c726b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f81af94488204e88a298599216437bff = $(`<div id="html_f81af94488204e88a298599216437bff" style="width: 100.0%; height: 100.0%;">date:, age:40s, gender:F, status:hospitalized</div>`)[0];
+            popup_27b4c5119a2743ef84d712440c8c726b.setContent(html_f81af94488204e88a298599216437bff);
+        
+
+        marker_678794cd6aa1449f929f0b5d9a012677.bindPopup(popup_27b4c5119a2743ef84d712440c8c726b)
+        ;
+
+        
+    
+    
+            var marker_e94143cd987947e7a581ab745a766ce5 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_cc0911521c6e4a6da1e032523b5f11dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a502ca2ac0a4cbda75c496e6a06b179 = $(`<div id="html_1a502ca2ac0a4cbda75c496e6a06b179" style="width: 100.0%; height: 100.0%;">date:, age:40s, gender:F, status:hospitalized</div>`)[0];
+            popup_cc0911521c6e4a6da1e032523b5f11dc.setContent(html_1a502ca2ac0a4cbda75c496e6a06b179);
+        
+
+        marker_e94143cd987947e7a581ab745a766ce5.bindPopup(popup_cc0911521c6e4a6da1e032523b5f11dc)
+        ;
+
+        
+    
+    
+            var marker_2001d96e18c14c2ba1003e955fdef970 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_1fece5e1b662457c8f383c5218ceabf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7c8b11d8e344176a60f6450bb078a63 = $(`<div id="html_c7c8b11d8e344176a60f6450bb078a63" style="width: 100.0%; height: 100.0%;">date:, age:40s, gender:F, status:hospitalized</div>`)[0];
+            popup_1fece5e1b662457c8f383c5218ceabf2.setContent(html_c7c8b11d8e344176a60f6450bb078a63);
+        
+
+        marker_2001d96e18c14c2ba1003e955fdef970.bindPopup(popup_1fece5e1b662457c8f383c5218ceabf2)
+        ;
+
+        
+    
+    
+            var marker_6b9856cbb0384a2497a433180d931c7e = L.marker(
+                [26.192634, 127.729369],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_7e032ec62ce4407ba18d96dd13d9811e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_023da5b1696746aebc389411e2fb9e14 = $(`<div id="html_023da5b1696746aebc389411e2fb9e14" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:M, status:hospitalized</div>`)[0];
+            popup_7e032ec62ce4407ba18d96dd13d9811e.setContent(html_023da5b1696746aebc389411e2fb9e14);
+        
+
+        marker_6b9856cbb0384a2497a433180d931c7e.bindPopup(popup_7e032ec62ce4407ba18d96dd13d9811e)
+        ;
+
+        
+    
+    
+            var marker_278e69c7ee754eb5bf9160f6a69391a5 = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_fcfb6632b23a4edeb52e0c4170282750 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_756fee8793e3488b8b83c9e10e9102d6 = $(`<div id="html_756fee8793e3488b8b83c9e10e9102d6" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:M, status:hospitalized</div>`)[0];
+            popup_fcfb6632b23a4edeb52e0c4170282750.setContent(html_756fee8793e3488b8b83c9e10e9102d6);
+        
+
+        marker_278e69c7ee754eb5bf9160f6a69391a5.bindPopup(popup_fcfb6632b23a4edeb52e0c4170282750)
+        ;
+
+        
+    
+    
+            var marker_63707f3b120a4953a3b7ebf296382a34 = L.marker(
+                [26.192634, 127.729369],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_882cb4b37cb64b7694bdd64ada51fff2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a229e8e4a3974b4a95ad128c434ddd46 = $(`<div id="html_a229e8e4a3974b4a95ad128c434ddd46" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:F, status:hospitalized</div>`)[0];
+            popup_882cb4b37cb64b7694bdd64ada51fff2.setContent(html_a229e8e4a3974b4a95ad128c434ddd46);
+        
+
+        marker_63707f3b120a4953a3b7ebf296382a34.bindPopup(popup_882cb4b37cb64b7694bdd64ada51fff2)
+        ;
+
+        
+    
+    
+            var marker_cf9c119adcc542d3baa1dc2b0ac1087c = L.marker(
+                [26.249754, 127.716591],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_cd7599d40c9d44ea84cf197e65a0cae4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90aca92de0c242839732b61691dfd911 = $(`<div id="html_90aca92de0c242839732b61691dfd911" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:F, status:hospitalized</div>`)[0];
+            popup_cd7599d40c9d44ea84cf197e65a0cae4.setContent(html_90aca92de0c242839732b61691dfd911);
+        
+
+        marker_cf9c119adcc542d3baa1dc2b0ac1087c.bindPopup(popup_cd7599d40c9d44ea84cf197e65a0cae4)
+        ;
+
+        
+    
+    
+            var marker_ba8685cf71b74e22903ec91d79caaac6 = L.marker(
+                [26.3343738, 127.8056597],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_35c0a6303d0a4edb903f10866e2c0c6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66f7548dcd5c4969ad5769537970b10c = $(`<div id="html_66f7548dcd5c4969ad5769537970b10c" style="width: 100.0%; height: 100.0%;">date:, age:70s, gender:M, status:hospitalized</div>`)[0];
+            popup_35c0a6303d0a4edb903f10866e2c0c6d.setContent(html_66f7548dcd5c4969ad5769537970b10c);
+        
+
+        marker_ba8685cf71b74e22903ec91d79caaac6.bindPopup(popup_35c0a6303d0a4edb903f10866e2c0c6d)
+        ;
+
+        
+    
+    
+            var marker_6c53ebd7a30043528cf398319c8200ca = L.marker(
+                [26.2815839, 127.7785754],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_121fff9c98b9409cae7f7890ff43617b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77980129c88c4ec69012c321615e55d2 = $(`<div id="html_77980129c88c4ec69012c321615e55d2" style="width: 100.0%; height: 100.0%;">date:, age:80s, gender:F, status:hospitalized</div>`)[0];
+            popup_121fff9c98b9409cae7f7890ff43617b.setContent(html_77980129c88c4ec69012c321615e55d2);
+        
+
+        marker_6c53ebd7a30043528cf398319c8200ca.bindPopup(popup_121fff9c98b9409cae7f7890ff43617b)
+        ;
+
+        
+    
+    
+            var marker_df6ffcd294954f39adcbfa91830c903e = L.marker(
+                [26.2122345, 127.6791452],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_c426126d77fc429fbc23c3ecdda309b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87d3e4a2472f4fa891c7e1e01948060d = $(`<div id="html_87d3e4a2472f4fa891c7e1e01948060d" style="width: 100.0%; height: 100.0%;">date:, age:30s, gender:F, status:to be hospitalized</div>`)[0];
+            popup_c426126d77fc429fbc23c3ecdda309b5.setContent(html_87d3e4a2472f4fa891c7e1e01948060d);
+        
+
+        marker_df6ffcd294954f39adcbfa91830c903e.bindPopup(popup_c426126d77fc429fbc23c3ecdda309b5)
+        ;
+
+        
+    
+    
+            var marker_51344b137c3240549b8fd2741e22187f = L.marker(
+                [26.1772381, 127.6863791],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_a8ea1f3ba1934ef8a28856f5eb8dfdd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12fa6b2f2c7541dba4ecd85df5bdba45 = $(`<div id="html_12fa6b2f2c7541dba4ecd85df5bdba45" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:F, status:hospitalized</div>`)[0];
+            popup_a8ea1f3ba1934ef8a28856f5eb8dfdd6.setContent(html_12fa6b2f2c7541dba4ecd85df5bdba45);
+        
+
+        marker_51344b137c3240549b8fd2741e22187f.bindPopup(popup_a8ea1f3ba1934ef8a28856f5eb8dfdd6)
+        ;
+
+        
+    
+    
+            var marker_5169a66914e74583b491b4943a646dbd = L.marker(
+                [26.3343738, 127.8056597],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_80fb90b93957420695c3e891971151dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b06d613041fb4710be8567d9a0706de0 = $(`<div id="html_b06d613041fb4710be8567d9a0706de0" style="width: 100.0%; height: 100.0%;">date:, age:30s, gender:M, status:to be hospitalized</div>`)[0];
+            popup_80fb90b93957420695c3e891971151dc.setContent(html_b06d613041fb4710be8567d9a0706de0);
+        
+
+        marker_5169a66914e74583b491b4943a646dbd.bindPopup(popup_80fb90b93957420695c3e891971151dc)
+        ;
+
+        
+    
+    
+            var marker_d6cc5bf6fa6f48a38e676823ba9cc612 = L.marker(
+                [26.3343738, 127.8056597],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_3ccf2f46c1934940b5bacb672feb59a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_630aaff0d3de443ca06a9c1a61d3ef3e = $(`<div id="html_630aaff0d3de443ca06a9c1a61d3ef3e" style="width: 100.0%; height: 100.0%;">date:, age:50s, gender:M, status:to be hospitalized</div>`)[0];
+            popup_3ccf2f46c1934940b5bacb672feb59a0.setContent(html_630aaff0d3de443ca06a9c1a61d3ef3e);
+        
+
+        marker_d6cc5bf6fa6f48a38e676823ba9cc612.bindPopup(popup_3ccf2f46c1934940b5bacb672feb59a0)
+        ;
+
+        
+    
+    
+            var marker_c9f5a13a263b4104ac85b7defb4e90f1 = L.marker(
+                [26.3343738, 127.8056597],
+                {}
+            ).addTo(marker_cluster_7d567da28d7f4ad08dfea7f367936e6e);
+        
+    
+        var popup_1b5bd33f0ded40b8ab01f09998a7e689 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd92d363293345bab3306cbcecad51ea = $(`<div id="html_fd92d363293345bab3306cbcecad51ea" style="width: 100.0%; height: 100.0%;">date:, age:20s, gender:M, status:to be hospitalized</div>`)[0];
+            popup_1b5bd33f0ded40b8ab01f09998a7e689.setContent(html_fd92d363293345bab3306cbcecad51ea);
+        
+
+        marker_c9f5a13a263b4104ac85b7defb4e90f1.bindPopup(popup_1b5bd33f0ded40b8ab01f09998a7e689)
+        ;
+
+        
+    
+</script>
